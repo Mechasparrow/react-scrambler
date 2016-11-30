@@ -8,6 +8,8 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
+  private scramble:string = "";
+
   constructor(public navCtrl: NavController) {
 
   }
