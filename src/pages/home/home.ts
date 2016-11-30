@@ -12,4 +12,8 @@ export class HomePage {
 
   }
 
+  scrambleclick(){
+    alert("ready to scramble");
+  }  
+
 }
