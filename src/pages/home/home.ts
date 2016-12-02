@@ -9,7 +9,7 @@ import { NavController } from 'ionic-angular';
 export class HomePage {
 
   private scramble:string = "";
-  private scramblelength: number = 8;
+  private scramblelength: number = 12;
 
   public moves:any = ["U", "L", "F", "R", "B", "D"];
 
@@ -18,9 +18,16 @@ export class HomePage {
   }
 
   scrambleclick(){
-    for (var i; i < this.scramblelength; i ++){
-      var move = this.moves[Math.floor((Math.random() * this.moves.length))];
+    this.scramble = "";
+    let movelist = [];
+    for (let i = 0; i < this.scramblelength; i ++){
+      var movenumber = Math.floor((Math.random() * this.moves.length));
+      var move = this.moves[movenumber];
+      movelist.push(move);
     }
+
+    this.scramble = movelist.join(" ");
+    console.log(this.scramble);
   }  
 
 }
