@@ -7,9 +7,14 @@
 <ion-content padding>
 
   <button (click) = "scrambleclick()" ion-button outline block large>Scramble</button>
-
+  <button (click) = "starttimer()" ion-button outline block large>Start Timer</button>
+  <button (click) = "stoptimer()" ion-button outline block large>Stop Timer</button>
   <div class = "scramble">
     <h1>{{scramble}}</h1>
+  </div>
+
+  <div class = "clock">
+    <h1 class = "timer-text">{{filteredtick}}</h1>
   </div>
 
 </ion-content>
