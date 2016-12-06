@@ -21753,3 +21753,8 @@ sub {
   text-align: center;
   margin-top: 10em;
 }
+
+.timer-text {
+  font-size: 3em;
+  text-align: center;
+}
